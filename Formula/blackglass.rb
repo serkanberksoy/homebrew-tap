@@ -3,10 +3,10 @@
 #
 #   brew install serkanberksoy/tap/blackglass
 class Blackglass < Formula
-  desc "Note-taking workspace for the terminal: linked Markdown notes, queries, tasks"
+  desc "Note-taking workspace for the terminal or a window: linked Markdown, queries, tasks"
   homepage "https://github.com/serkanberksoy/blackglass"
-  url "https://github.com/serkanberksoy/blackglass/archive/refs/tags/v1.10.0.tar.gz"
-  sha256 "fb013221daf1fc05d65d77ad9c726b4921b7a1d325f63247209801dca2d508a9"
+  url "https://github.com/serkanberksoy/blackglass/archive/refs/tags/v1.12.0.tar.gz"
+  sha256 "2e2c94a8b737e99c3b041325d01cc8940e5568973fadbf135936ac03b072d4c4"
   license "MIT"
   head "https://github.com/serkanberksoy/blackglass.git", branch: "main"
 
@@ -15,8 +15,8 @@ class Blackglass < Formula
   # The editor, a library blackglass builds against from beside it
   # (a path dependency, ../mdedit).
   resource "mdedit" do
-    url "https://github.com/serkanberksoy/mdedit/archive/refs/tags/v3.23.0.tar.gz"
-    sha256 "d03ba884a9eeb6eb5b804efe5b3a538b1ae3384946b6d9b691f2eb5e2050ca9b"
+    url "https://github.com/serkanberksoy/mdedit/archive/refs/tags/v3.24.0.tar.gz"
+    sha256 "a118462edfe59e4e4762739f7a071fa6820316fce971c68733f8bd5640c4476f"
   end
 
   def install
@@ -30,6 +30,8 @@ class Blackglass < Formula
     <<~EOS
       Try the example vault, a tour of every feature:
         blackglass --example
+      Open it in a window of its own (your fonts, pictures, color emoji):
+        blackglass --gui --example
     EOS
   end
 
