@@ -5,8 +5,8 @@
 class Blackglass < Formula
   desc "Note-taking workspace for the terminal: linked Markdown notes, queries, tasks"
   homepage "https://github.com/serkanberksoy/blackglass"
-  url "https://github.com/serkanberksoy/blackglass/archive/refs/tags/v1.0.1.tar.gz"
-  sha256 "65ae6fb4bd04f40dd8293215a75bf7638660e09ca750386298a6c88b518cccb7"
+  url "https://github.com/serkanberksoy/blackglass/archive/refs/tags/v1.10.0.tar.gz"
+  sha256 "fb013221daf1fc05d65d77ad9c726b4921b7a1d325f63247209801dca2d508a9"
   license "MIT"
   head "https://github.com/serkanberksoy/blackglass.git", branch: "main"
 
@@ -15,8 +15,8 @@ class Blackglass < Formula
   # The editor, a library blackglass builds against from beside it
   # (a path dependency, ../mdedit).
   resource "mdedit" do
-    url "https://github.com/serkanberksoy/mdedit/archive/refs/tags/v3.21.0.tar.gz"
-    sha256 "2370d962986357a0b5b0f8e4fffa25260f5c52de731ec0020b2b469911a57bb2"
+    url "https://github.com/serkanberksoy/mdedit/archive/refs/tags/v3.23.0.tar.gz"
+    sha256 "d03ba884a9eeb6eb5b804efe5b3a538b1ae3384946b6d9b691f2eb5e2050ca9b"
   end
 
   def install
