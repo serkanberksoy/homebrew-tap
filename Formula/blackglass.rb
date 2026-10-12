@@ -5,8 +5,8 @@
 class Blackglass < Formula
   desc "Note-taking workspace for the terminal or a window: linked Markdown, queries, tasks"
   homepage "https://github.com/serkanberksoy/blackglass"
-  url "https://github.com/serkanberksoy/blackglass/archive/refs/tags/v1.12.0.tar.gz"
-  sha256 "2e2c94a8b737e99c3b041325d01cc8940e5568973fadbf135936ac03b072d4c4"
+  url "https://github.com/serkanberksoy/blackglass/archive/refs/tags/v1.16.0.tar.gz"
+  sha256 "f3befe04ded60182f2937897265377469866e42739798c93d6f5b748ba429e75"
   license "MIT"
   head "https://github.com/serkanberksoy/blackglass.git", branch: "main"
 
